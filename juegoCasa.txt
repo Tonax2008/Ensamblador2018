@@ -1,0 +1,632 @@
+                                    .model small
+.data  
+.code
+
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0902h
+mov dx,1602h
+int 10h  
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0803h
+mov dx,0804h
+int 10h  
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0704h
+mov dx,0705h
+int 10h
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0605h
+mov dx,0606h
+int 10h
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0506h
+mov dx,0507h
+int 10h   
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0407h
+mov dx,0408h
+int 10h 
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0308h
+mov dx,030ah
+int 10h  
+
+
+mov ah,06h
+mov bh,10100110b
+mov cx,040ah
+mov dx,040bh
+int 10h 
+
+mov ah,06h
+mov bh,10100110b
+mov cx,050bh
+mov dx,050ch
+int 10h  
+
+mov ah,06h
+mov bh,10100110b
+mov cx,060ch
+mov dx,060dh
+int 10h
+
+mov ah,06h
+mov bh,10100110b
+mov cx,070dh
+mov dx,070fh
+int 10h 
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0610h
+mov dx,0612h
+int 10h 
+mov ah,06h
+mov bh,10100110b
+mov cx,0510h
+mov dx,0512h
+int 10h 
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0410h
+mov dx,0412h
+int 10h    
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0611h
+mov dx,0811h
+int 10h 
+
+;casa 2
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0811h
+mov dx,1611h
+int 10h  
+
+mov ah,06h
+mov bh,10100110b
+mov cx,1611h
+mov dx,1617h
+int 10h   
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0917h
+mov dx,1517h
+int 10h  
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0916h
+mov dx,0917h
+int 10h 
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0815h
+mov dx,0714h
+int 10h  
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0613h
+mov dx,0512h
+int 10h 
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0513h
+mov dx,0811h
+int 10h 
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0811h
+mov dx,0814h
+int 10h 
+         
+;division de piso
+
+mov ah,06h
+mov bh,10100110b
+mov cx,1002h
+mov dx,1005h
+int 10h  
+
+
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0f06h
+mov dx,0f08h
+int 10h
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0e09h
+mov dx,0e09h
+int 10h 
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0f0ah
+mov dx,0f0ch
+int 10h
+
+mov ah,06h
+mov bh,10100110b
+mov cx,100dh
+mov dx,1011h
+int 10h  
+
+
+          
+        
+;vallas
+
+mov ah,06h
+mov bh,11000000b
+mov cx,1503h
+mov dx,1603h
+int 10h 
+
+mov ah,06h
+mov bh,11000000b
+mov cx,1505h
+mov dx,1605h
+int 10h 
+
+
+
+mov ah,06h
+mov bh,11000000b
+mov cx,150ah
+mov dx,160ah
+int 10h  
+
+mov ah,06h
+mov bh,11000000b
+mov cx,150ch
+mov dx,160ch
+int 10h  
+
+mov ah,06h
+mov bh,11000000b
+mov cx,150eh
+mov dx,160eh
+int 10h 
+
+mov ah,06h
+mov bh,11000000b
+mov cx,1510h
+mov dx,1610h
+int 10h   
+
+
+  
+        
+;puerta 
+
+mov ah,06h
+mov bh,10100110b
+mov cx,1207h
+mov dx,1607h
+int 10h
+
+mov ah,06h
+mov bh,10100110b
+mov cx,120ah
+mov dx,160ah
+int 10h 
+
+mov ah,06h
+mov bh,10100110b
+mov cx,1207h
+mov dx,130ah
+int 10h 
+
+mov ah,06h
+mov bh,10100110b
+mov cx,0903h
+mov dx,0b03h
+int 10h 
+
+;ventanas
+mov ah,06h
+mov bh,10011b
+mov cx,090bh
+mov dx,090bh
+int 10h  
+
+mov ah,06h
+mov bh,100110b
+mov cx,080bh
+mov dx,080bh
+int 10h
+         
+mov ah,06h
+mov bh,100110b
+mov cx,0906h
+mov dx,0906h
+int 10h  
+
+mov ah,06h
+mov bh,100110b
+mov cx,0806h
+mov dx,0806h
+int 10h  
+
+mov ah,06h
+mov bh,100110b
+mov cx,0d15h
+mov dx,0d15h
+int 10h       
+
+   
+;arbol        
+
+         
+;mov ah,06h
+;mov bh,11010110b
+;mov cx,1216h
+;mov dx,1616h
+;int 10h 
+
+;mov ah,06h
+;mov bh,11010110b
+;mov cx,1217h
+;mov dx,1617h
+;int 10h    
+ 
+;coche         
+         
+mov ah,06h
+mov bh,11001000b
+mov cx,131ah
+mov dx,141ah
+int 10h  
+
+mov ah,06h
+mov bh,11001000b
+mov cx,131bh
+mov dx,131bh
+int 10h  
+
+mov ah,06h
+mov bh,11001000b
+mov cx,141ah
+mov dx,1420h
+int 10h    
+          
+mov ah,06h
+mov bh,11001000b
+mov cx,121ch
+mov dx,121dh
+int 10h
+
+mov ah,06h
+mov bh,11001000b
+mov cx,131eh
+mov dx,131fh
+int 10h
+;llantas   
+
+mov ah,06h
+mov bh,11h
+mov cx,151ah
+mov dx,151ah
+int 10h 
+
+mov ah,06h
+mov bh,11h
+mov cx,151eh
+mov dx,151eh
+int 10h
+
+;persona
+
+mov ah,06h
+mov bh,11010110b
+mov cx,0e23h
+mov dx,0e26h
+int 10h
+
+mov ah,06h
+mov bh,11010110b
+mov cx,0e23h
+mov dx,1223h
+int 10h 
+
+mov ah,06h
+mov bh,11010110b
+mov cx,1223h
+mov dx,1226h
+int 10h  
+
+
+mov ah,06h
+mov bh,11010110b
+mov cx,0e27h
+mov dx,1227h
+int 10h 
+
+ ;ojos
+ 
+mov ah,06h
+mov bh,11h
+mov cx,0f24h
+mov dx,0f24h
+int 10h     
+
+mov ah,06h
+mov bh,11h
+mov cx,0f26h
+mov dx,0f26h
+int 10h  
+
+;cuerpo
+
+mov ah,06h
+mov bh,14h
+mov cx,1225h
+mov dx,1725h
+int 10h 
+
+mov ah,06h
+mov bh,14h
+mov cx,1423h
+mov dx,1427h 
+
+             
+;borra coche
+;coche         
+         
+ 
+
+mov ah,06h
+mov bh,00b
+mov cx,131bh
+mov dx,131bh
+int 10h  
+
+mov ah,06h
+mov bh,000b
+mov cx,141ah
+mov dx,1420h
+int 10h    
+          
+mov ah,06h
+mov bh,000b
+mov cx,121ch
+mov dx,121dh
+int 10h
+
+mov ah,06h
+mov bh,000b
+mov cx,131eh
+mov dx,131fh
+int 10h
+;llantas   
+
+mov ah,06h
+mov bh,00h
+mov cx,151ah
+mov dx,151ah
+int 10h 
+
+mov ah,06h
+mov bh,00h
+mov cx,151eh
+mov dx,151eh
+int 10h
+             
+             
+;movi coche
+ 
+mov ah,06h
+mov bh,00b
+mov cx,131ah
+mov dx,141ah
+int 10h        
+       
+;coche         
+         
+mov ah,06h
+mov bh,11001000b
+mov cx,131bh
+mov dx,141bh
+int 10h  
+
+mov ah,06h
+mov bh,11001000b
+mov cx,131ch
+mov dx,131ch
+int 10h  
+
+mov ah,06h
+mov bh,11001000b
+mov cx,141bh
+mov dx,1421h
+int 10h    
+          
+mov ah,06h
+mov bh,11001000b
+mov cx,121dh
+mov dx,121eh
+int 10h
+
+mov ah,06h
+mov bh,11001000b
+mov cx,131fh
+mov dx,1320h
+int 10h
+;llantas   
+
+mov ah,06h
+mov bh,11h
+mov cx,151bh
+mov dx,151bh
+int 10h 
+
+mov ah,06h
+mov bh,11h
+mov cx,151fh
+mov dx,151fh
+int 10h
+
+
+
+       
+     
+          
+;ventanas 2
+mov ah,06h
+mov bh,11111111b
+mov cx,090bh
+mov dx,090bh
+int 10h  
+
+mov ah,06h
+mov bh,11111111b
+mov cx,080bh
+mov dx,080bh
+int 10h
+         
+mov ah,06h
+mov bh,11111111b
+mov cx,0906h
+mov dx,0906h
+int 10h  
+
+mov ah,06h
+mov bh,11111111b
+mov cx,0806h
+mov dx,0806h
+int 10h  
+
+mov ah,06h
+mov bh,1111111b
+mov cx,0d15h
+mov dx,0d15h
+int 10h                  
+         
+;ventanas 3
+mov ah,06h
+mov bh,10011b
+mov cx,090bh
+mov dx,090bh
+int 10h  
+
+mov ah,06h
+mov bh,100110b
+mov cx,080bh
+mov dx,080bh
+int 10h
+         
+mov ah,06h
+mov bh,100110b
+mov cx,0906h
+mov dx,0906h
+int 10h  
+
+mov ah,06h
+mov bh,100110b
+mov cx,0806h
+mov dx,0806h
+int 10h  
+
+mov ah,06h
+mov bh,100110b
+mov cx,0d15h
+mov dx,0d15h
+int 10h  
+
+
+;ventanas 2
+mov ah,06h
+mov bh,11111111b
+mov cx,090bh
+mov dx,090bh
+int 10h  
+
+mov ah,06h
+mov bh,11111111b
+mov cx,080bh
+mov dx,080bh
+int 10h
+         
+mov ah,06h
+mov bh,11111111b
+mov cx,0906h
+mov dx,0906h
+int 10h  
+
+mov ah,06h
+mov bh,11111111b
+mov cx,0806h
+mov dx,0806h
+int 10h  
+
+mov ah,06h
+mov bh,1111111b
+mov cx,0d15h
+mov dx,0d15h
+int 10h 
+
+
+;ventanas 3
+mov ah,06h
+mov bh,10011b
+mov cx,090bh
+mov dx,090bh
+int 10h  
+
+mov ah,06h
+mov bh,100110b
+mov cx,080bh
+mov dx,080bh
+int 10h
+         
+mov ah,06h
+mov bh,100110b
+mov cx,0906h
+mov dx,0906h
+int 10h  
+
+mov ah,06h
+mov bh,100110b
+mov cx,0806h
+mov dx,0806h
+int 10h  
+
+mov ah,06h
+mov bh,100110b
+mov cx,0d15h
+mov dx,0d15h
+int 10h                                               
+                  
+
+
+         
+         
+
+ mov ah,01
+ int 21h

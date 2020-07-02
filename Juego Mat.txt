@@ -1,0 +1,209 @@
+.model small
+.stack 64
+           
+cuadro macro  ini,fin
+mov ah,06h
+mov bh,10100000b
+mov cx,ini 
+mov dx,fin
+int 10h 
+endm 
+
+           
+datouno macro 
+mov ah,01h
+int 21h 
+sub al,30h
+mov cl,al
+endm 
+
+
+datodos macro  
+mov ah,01h
+int 21h
+sub al,30h
+endm  
+
+
+puntero macro corde
+mov ah,02h 
+mov dx,corde
+int 10h 
+endm 
+
+
+reset macro
+mov ax,00h 
+mov cx,00h
+mov bx,00h
+mov dx,00h  
+endm  
+
+
+mult macro memo
+mul cl 
+aam 
+mov memo,ax  ;aqui almaceno
+mov bx,ax  
+endm 
+
+
+separacion macro memor 
+puntero 0001h
+mov ax,memor    
+mov bx,ax     
+mov dl,bh
+add dl,30h
+mov ah,02h
+int 21h
+mov dl,bl       
+add dl,30h
+mov ah,02h
+int 21h
+endm 
+
+
+resul macro 
+    
+mov dl,bh
+add dl,30h 
+mov ah,02h
+int 21h
+              
+;unidades 
+
+mov dl,bl       
+add dl,30h
+mov ah,02h
+int 21h 
+endm    
+    
+.data
+n1 dw 0
+n2 dw 0
+n3 dw 0
+n4 dw 0 
+m3 dw 0
+m4 dw 0
+
+CADENA   DB ' Es el mayor ' ,10,13,'$' 
+CADENA1  DB ' Es el mayor ',10,13,'$'   
+
+.code  
+
+;1 cuadro 
+
+cuadro 0504h 080ch
+reset         
+puntero 0702h
+datouno  
+puntero 0407h
+datodos
+puntero 0707h
+mult  n1
+resul 
+
+;2 cuadro
+;segundo numero 
+
+cuadro 0525h 082bh      
+reset                   
+puntero 0724h
+datouno  
+puntero 0428h
+datodos
+puntero 0727h
+mult n2
+resul 
+      
+      
+ 
+;3 cuadro  
+
+cuadro 0d25h 1135h
+reset                              
+puntero 0c30h   
+datouno  
+puntero 1023h       
+datodos   
+puntero 1028h
+mult n3
+resul
+       
+;cuadro 4 
+cuadro 1004h 1610h
+reset        
+puntero 0f07h 
+datouno  
+puntero 1303h
+datodos
+puntero 130ah 
+mult n4
+resul
+puntero 130ah 
+
+
+;comparacion
+
+puntero 0001h
+mov dx,n1 
+mov cx,n2
+cmp cx,dx  
+ja c2     ;mayor
+jb c1     ;menor
+c2:
+mov m3,cx
+  
+jmp next 
+
+c1:
+mov m3,dx
+mov ax,m3
+      
+      
+next:  
+
+;comparador 2 
+mov ax,n3
+mov cx,n4
+cmp cx,ax 
+
+ja c4
+jb c3
+c4:
+mov m4,ax 
+jmp next1
+c3:
+mov m4,ax
+
+;comparador 3 
+
+next1:
+mov ax,m3
+mov cx,m4
+cmp cx,ax 
+ja mayor
+jb menor
+
+puntero 0001h
+menor:  ;salto
+puntero 0001h 
+separacion  m3
+puntero 0001h
+MOV AX,@DATA
+MOV DS,AX
+MOV DX,OFFSET CADENA1
+MOV AH,09H
+int 21h        
+.exit 
+puntero 0001h
+mayor: ;salto
+puntero 0001h
+separacion  m4
+MOV AX,@DATA
+MOV DS,AX
+MOV DX,OFFSET CADENA
+MOV AH,09H
+INT 21H 
+.exit        
+ 
